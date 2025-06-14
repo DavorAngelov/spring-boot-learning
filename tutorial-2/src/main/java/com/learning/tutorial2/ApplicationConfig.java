@@ -9,23 +9,21 @@ import org.springframework.context.annotation.Primary;
 public class ApplicationConfig {
 
     @Bean("bean1")
-    public MyFirstClass myFirstBean(){
+    public MyFirstClass myFirstBean() {
         return new MyFirstClass("First bean");
     }
 
 
     @Bean
-    public MyFirstClass mySecondBean(){
+    public MyFirstClass mySecondBean() {
         return new MyFirstClass("Second bean");
     }
 
     @Bean
     //@Primary
-    public MyFirstClass myThirdBean(){
+    public MyFirstClass myThirdBean() {
         return new MyFirstClass("Third bean");
     }
-
-
 
 
 }
